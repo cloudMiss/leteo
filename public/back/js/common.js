@@ -33,6 +33,7 @@ $('.child').prev().on('click',function(){
 $('.btn_menu').on('click',function(){
     $('.lt_aside').toggleClass('now');
     $('.lt_main').toggleClass('now');
+    $('.topbar').toggleClass('now');
 })
 
 $('.btn_logout').on('click',function(){

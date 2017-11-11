@@ -13,12 +13,24 @@ a:link,a:visited,a:hover,a:active {
     text-decoration: none;
 }
 
+.table.table-bordered td {
+    text-align: center;
+    vertical-align: middle;
+}
+.table.table-bordered th {
+    text-align: center;
+}
+
 .login_bg {
     background-color:#222d32;
 }
 
 .mt_150 {
     margin-top: 150px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
 }
 
 .panel h4 {
@@ -31,9 +43,10 @@ a:link,a:visited,a:hover,a:active {
     width: 180px;
     height: 100%;
     background-color: #222d32;
-    position: absolute;
+    position: fixed;
     left: 0;
     transition: all 1s;
+    z-index: 999;
 }
 .lt_aside.now {
     left: -180px;
@@ -77,7 +90,7 @@ a:link,a:visited,a:hover,a:active {
     color:#ddd;
     border:3px solid transparent;
 }
-.lt_aside .nav a.now {
+.lt_aside .nav li>a.now {
     border-left-color:#069;
     background-color: #1d1f21;
     color:#fff;
@@ -85,11 +98,15 @@ a:link,a:visited,a:hover,a:active {
 .lt_aside .nav .child a {
     padding-left: 50px;
 }
+.lt_aside .nav .child>a.now {
+    color: #fff;
+}
 
 .lt_main {
     padding-left: 180px;
     height: 100%;
     transition: all 1s;
+    padding-top: 70px;
 }
 .lt_main.now {
     padding-left: 0;
@@ -100,7 +117,16 @@ a:link,a:visited,a:hover,a:active {
     background-color: #3c8dbc;
     margin-bottom: 20px;
     line-height: 50px;
-    padding: 0 20px;
+    padding: 0 20px 0 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+    transition: all 1s;
+}
+.lt_main .topbar.now {
+    padding-left: 20px;
 }
 .lt_main .topbar a {
     font-size: 16px;
