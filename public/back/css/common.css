@@ -140,3 +140,25 @@ a:link,a:visited,a:hover,a:active {
 }
 
 
+/* second */
+.upload_box {
+    width: 82px;
+    height: 34px;
+    position: relative;
+}
+.upload_box:hover button {
+    color:#333;
+    background-color: #e6e6e6;
+    background-color: #adadad;
+}
+.upload_box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity:0;
+}
+
+
+

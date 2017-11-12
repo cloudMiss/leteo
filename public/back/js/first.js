@@ -66,15 +66,12 @@ $(function(){
             success:function(data){
                 console.log(data);
                 if(data.success){
-                    $('#addModal').modal('hide');
-                
-
-                    // $form.data('bootstrapValidator').resetForm();
-                    $form.data("bootstrapValidator").resetForm();
-                    
-                    $form[0].reset();
                     currentPage = 1;
                     render();
+                    // $form.data('bootstrapValidator').resetForm();
+                    $form.data("bootstrapValidator").resetForm();
+                    $form[0].reset();
+                    $('#addModal').modal('hide');
                 }
             }
         })
